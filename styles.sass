@@ -1,0 +1,82 @@
+html
+  font-size: 10px
+
+body
+  font-size: 1.6rem
+  margin: 0
+  padding: 0
+  width: 100vw
+  position: relative
+  overflow-x: hidden
+
+.header
+  background: pink
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 60px
+  padding: 20px 0 20px 0
+
+  .menu
+    position: absolute
+    display: inline-block
+    right: 20px
+    top: 50%
+    transform: translateY(-50%)
+    width: 50px
+    height: 50px
+    background: gray
+
+.main
+  padding-top: 100px
+  background: white
+
+  .doodle
+    width: 300px
+    height: 200px
+    background: gray
+    margin: 0 auto
+    margin-top: 60px
+
+  #searchBox
+    display: block
+    position: relative
+    margin: 0 auto
+    margin-top: 40px
+    font-size: 2.3rem
+    width: 300px
+    height: 30px
+    border: 0
+    padding: 5px
+    outline: 2px solid #333
+    transition: all 300ms ease-in-out
+
+    &.reached-top
+      position: fixed
+      top: -10px
+      left: 5%
+      width: 60%
+
+
+  .grid
+    width: 90%
+    max-width: 600px
+    margin: 0 auto
+    margin-top: 40px
+    margin-bottom: 40px
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-gap: 20px
+
+    .box
+      height: 100px
+      background: gray
+
+
+.footer
+  height: 1000px
+  width: 90%
+  max-width: 600px
+  margin: 0 auto
+  background: gray
